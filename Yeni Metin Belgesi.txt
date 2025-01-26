@@ -1,0 +1,43 @@
+# Import of libraries
+
+# System libraries
+import re
+import unicodedata
+import itertools
+from datasets import Dataset
+
+# Library for file manipulation
+import pandas as pd
+import numpy as np
+import pandas
+
+# Data visualization
+import seaborn as sns
+import matplotlib.pylab as pl
+import matplotlib as m
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import plotly.express as px
+from matplotlib import pyplot as plt
+
+# LLM
+from transformers import LlamaForCausalLM, LlamaTokenizer
+
+# Configuration for graph width and layout
+sns.set_theme(style='whitegrid')
+palette='viridis'
+
+# Warnings remove alerts
+import warnings
+warnings.filterwarnings("ignore")
+
+# Python version
+from platform import python_version
+print('Python version in this Jupyter Notebook:', python_version())
+
+# Load library versions
+import watermark
+
+# Library versions
+%reload_ext watermark
+%watermark -a "Library versions" --iversions
